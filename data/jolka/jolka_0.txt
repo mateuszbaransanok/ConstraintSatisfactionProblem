@@ -1,0 +1,10 @@
+3x4
+____
+___#
+____
+boat
+art
+need
+ban
+ore
+ate
