@@ -34,29 +34,29 @@ To install the project, follow these steps:
 
 ### Variable Selection Heuristics
 
-* **In order**: This heuristic selects variables in the order they appear in the given CSP instance.
+* **In order** selects variables in the order they appear in the given CSP instance.
   It follows a sequential approach and assigns values to variables one by one, starting from the first variable in the list.
 
-* **Most constrained**: This heuristic selects the variable with the fewest remaining values in its domain.
+* **Most constrained** selects the variable with the fewest remaining values in its domain.
   It aims to choose the variable that is most constrained, potentially reducing the search space more quickly.
 
-* **Most constraining**: This heuristic selects the variable involved in the largest number of constraints with other variables.
+* **Most constraining** selects the variable involved in the largest number of constraints with other variables.
   It prioritizes the variable that has the most impact on other variables, increasing the chances of finding a solution more efficiently.
 
-* **Random**: This heuristic randomly selects variables from the available options.
+* **Random** randomly selects variables from the available options.
   It does not follow any specific order or criteria and can be useful for exploring different search paths.
 
 
 ### Value Selection Heuristics
 
-* **Ascending**: This heuristic selects values in ascending order from the domain of a variable.
+* **Ascending** selects values in ascending order from the domain of a variable.
   It starts with the smallest value and progresses incrementally.
   It can be useful when the order of values is relevant or when the domain has a natural ordering.
 
-* **Least constraining**: This heuristic prioritizes values that impose the fewest constraints on the remaining unassigned variables.
+* **Least constraining** prioritizes values that impose the fewest constraints on the remaining unassigned variables.
   It aims to choose values that leave the most options open for subsequent variable assignments, potentially improving the efficiency of the search process.
 
-* **Random**: This heuristic randomly selects values from the available options.
+* **Random** randomly selects values from the available options.
   It does not follow any specific order or criteria and can be useful for exploring different search paths or when the order of values is not significant.
 
 
