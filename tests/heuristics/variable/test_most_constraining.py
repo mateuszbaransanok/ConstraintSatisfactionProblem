@@ -1,5 +1,6 @@
 from unittest import TestCase
 
+from csp.abc.heuristics.variable import VariableHeuristic
 from csp.abc.variable import Variable
 from csp.constraints.lower import IsLower
 from csp.constraints.unique import IsUnique
@@ -16,7 +17,7 @@ class TestMostConstrainingVariables(TestCase):
         IsUnique([variable2, variable1])
         variables = [variable1, variable2, variable3]
         expected = [variable2, variable1, variable3]
-        heuristic = MostConstrainingVariables()
+        heuristic: VariableHeuristic[int] = MostConstrainingVariables()
 
         actual = heuristic.get_sorted_variables(variables)
 
