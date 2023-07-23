@@ -64,8 +64,8 @@ To install the project, follow these steps:
 
 ### Futoshiki
 
-Futoshiki is a logic-based puzzle game that is played on a square grid. 
-The objective of the game is to fill in the grid with numbers, satisfying certain rules and constraints. 
+Futoshiki is a logic-based puzzle game that is played on a square grid.
+The objective of the game is to fill in the grid with numbers, satisfying certain rules and constraints.
 Here is a description of the standard Futoshiki puzzle file format:
 
 ```text
@@ -82,8 +82,8 @@ D2;C2
 
 The first line of the file contains a single number N, which indicates the size of the puzzle.
 
-Following the line with the text "START:", the representation of the initial state of the puzzle is provided. 
-The grid is represented by N lines, each containing N numbers. 
+Following the line with the text "START:", the representation of the initial state of the puzzle is provided.
+The grid is represented by N lines, each containing N numbers.
 The numbers from 1 to N represent the filled-in values in the puzzle.
 If a position contains a value of 0, it signifies that the cell is empty and needs to be filled in during the puzzle-solving process.
 
@@ -95,7 +95,7 @@ The rows are denoted by consecutive Latin alphabet letters (starting from A), an
 ### Skyscrapper
 
 Skyscraper is a puzzle game that involves arranging buildings on a square grid based on clues provided on the edges of the grid.
-The objective is to place buildings in such a way that they meet certain visibility rules. 
+The objective is to place buildings in such a way that they meet certain visibility rules.
 Here is a description of the standard Skyscraper puzzle file format:
 
 ```text
@@ -108,15 +108,15 @@ P;2;2;2;2
 
 The first line of the file contains a single number N, which indicates the size of the puzzle.
 
-The file includes information about the edges of the puzzle, namely [G] for the top edge, [D] for the bottom edge, [L] for the left edge, and [P] for the right edge. 
-Each edge description is followed by a series of numbers from 1 to N. 
-If a position contains a value of 0, it means that there is no clue regarding the number of visible buildings from that position. 
+The file includes information about the edges of the puzzle, namely [G] for the top edge, [D] for the bottom edge, [L] for the left edge, and [P] for the right edge.
+Each edge description is followed by a series of numbers from 1 to N.
+If a position contains a value of 0, it means that there is no clue regarding the number of visible buildings from that position.
 When filling in the grid, the buildings are placed from left to right for the top and bottom edges, and from top to bottom for the left and right edges.
 
 
 ### Jolka
 
-Jolka is a word puzzle game that involves filling a grid with words based on given clues. 
+Jolka is a word puzzle game that involves filling a grid with words based on given clues.
 The goal is to complete the grid with valid words that intersect with each other correctly.
 Here is a description of the standard Jolka puzzle file format:
 
@@ -135,19 +135,19 @@ ate
 
 The first line of the file indicates the size of the puzzle grid using the format "NxM", where N represents the number of rows and M represents the number of columns.
 
-The following lines represent the puzzle grid itself, where empty spaces are indicated by underscores (_) and 
+The following lines represent the puzzle grid itself, where empty spaces are indicated by underscores (_) and
 blocks (empty positions that cannot be filled with words) are represented by pound signs (#).
 
 After the puzzle grid, the file includes a list of clues.
-Each clue corresponds to a word that needs to be filled into the grid, crossing the empty spaces at the corresponding positions. 
+Each clue corresponds to a word that needs to be filled into the grid, crossing the empty spaces at the corresponding positions.
 The clues are listed one per line.
 
 
 ### Sudoku
 
-Sudoku is a popular logic-based number puzzle that involves filling a 9x9 grid with digits from 1 to 9. 
+Sudoku is a popular logic-based number puzzle that involves filling a 9x9 grid with digits from 1 to 9.
 The goal is to complete the grid so that each row, each column, and each of the nine 3x3 sub-grids (also known as "boxes")
-contains all the digits from 1 to 9 without any repetition. 
+contains all the digits from 1 to 9 without any repetition.
 
 Here is a description of the standard Sudoku puzzle file format:
 
@@ -156,12 +156,12 @@ Here is a description of the standard Sudoku puzzle file format:
 625371948473985216819462753231794685547618329968523174196857432352146897784239561
 ```
 
-The first line of the file represents the initial state of the puzzle, where each dot (.) represents an empty cell that needs to be filled. 
+The first line of the file represents the initial state of the puzzle, where each dot (.) represents an empty cell that needs to be filled.
 The numbers represent the pre-filled digits in the grid.
 
-The second line of the file represents the optional solution to the puzzle, where each digit corresponds to a filled-in cell in the grid, 
-following the Sudoku rules of no repetition in rows, columns, and boxes. 
-It is important to note that the solution line is not always present in every Sudoku puzzle file. 
+The second line of the file represents the optional solution to the puzzle, where each digit corresponds to a filled-in cell in the grid,
+following the Sudoku rules of no repetition in rows, columns, and boxes.
+It is important to note that the solution line is not always present in every Sudoku puzzle file.
 Some files may only contain the initial state of the puzzle without the corresponding solution.
 
 
