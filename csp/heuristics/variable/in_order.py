@@ -1,4 +1,4 @@
-from csp.abc.herustic.variable import VariableHeuristic
+from csp.abc.heuristics.variable import VariableHeuristic
 from csp.abc.value import TValue
 from csp.abc.variable import Variable
 

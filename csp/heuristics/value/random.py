@@ -1,6 +1,6 @@
 from random import shuffle
 
-from csp.abc.herustic.value import ValueHeuristic
+from csp.abc.heuristics.value import ValueHeuristic
 from csp.abc.value import TValue
 from csp.abc.variable import Variable
 

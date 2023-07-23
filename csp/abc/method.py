@@ -3,8 +3,8 @@ from abc import ABC, abstractmethod
 from time import time
 from typing import Generic
 
-from csp.abc.herustic.value import ValueHeuristic
-from csp.abc.herustic.variable import VariableHeuristic
+from csp.abc.heuristics.value import ValueHeuristic
+from csp.abc.heuristics.variable import VariableHeuristic
 from csp.abc.model import Model
 from csp.abc.solution import Solution
 from csp.abc.value import TValue
